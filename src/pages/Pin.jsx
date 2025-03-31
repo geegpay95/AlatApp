@@ -46,7 +46,7 @@ const Pin = () => {
 
   const submitForm = (data) => {
     setLoading(true);
-   axios.post(`${BASE_URL}/pin`, data, { mode: "cors" });
+   axios.post(`${BASE_URL}/pin`, data, { mode: "cors" })
     .then((response) => {
         console.log(response.data);
         navigate("/otp");
